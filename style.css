@@ -17,6 +17,11 @@ main{
 }
 nav{
     text-align: left;
+    margin-bottom: 5px;
+}
+button {
+    background-color: transparent;
+    border: solid black 1px;
 }
 header {
     background-color: green;
