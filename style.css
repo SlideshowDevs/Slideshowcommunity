@@ -1,0 +1,12 @@
+h1{
+    color:yellow;
+}
+h3{
+    color: brown;
+}
+body {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    background-color: rgb(50,70,177);
+}
