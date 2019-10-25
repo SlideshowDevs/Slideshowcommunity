@@ -1,8 +1,9 @@
 h1{
     color:yellow;
 }
-h3{
-    color: brown;
+h3 {
+    color: white;
+    text-align: left;
 }
 body {
     margin: auto;
@@ -16,4 +17,10 @@ main{
 }
 nav{
     text-align: left;
+}
+header {
+    background-color: green;
+}
+footer {
+    background-color: brown;
 }
