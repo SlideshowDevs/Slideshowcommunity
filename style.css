@@ -14,11 +14,12 @@ body {
     background-size: 50px;
     color: white
 }
-main{
-    text-align:left;
+main {
+    text-align: left;
     padding: 0px 0px 0px 5px;
     border: solid white 2px;
     min-height: 500px;
+    background-color: rgba(0, 255, 0, 0.1);
 }
 nav{
     text-align: left;
@@ -38,4 +39,8 @@ footer {
     margin-top: 5px;
     text-align: left;
     border: solid white 2px;
+    background-color: rgba(255, 180, 0, 0.1);
+}
+#selected_button {
+    background-color: rgba(0, 255, 0, 0.5);
 }
