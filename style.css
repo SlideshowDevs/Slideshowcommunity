@@ -44,3 +44,29 @@ footer {
 #selected_button {
     background-color: rgba(0, 255, 0, 0.5);
 }
+#socialbox { 
+	border: solid yellow 3px;
+	width: 135px;
+	height: 30px;
+}
+#Modpacknamebox {
+	border: solid lightblue 2px;
+	width: 600px;
+	height: 30px;
+	text-align: center;
+	margin-left:90px;
+}
+#modpackdesc {
+	border: solid blue 2px;
+	width: 600px;
+	height: 70px;
+	text-align: center;
+	margin-left:90px;
+}
+#img {
+	width:87px;
+	height:87px;
+	vertical-align:middle;
+	float:left;
+}
+	
