@@ -1,33 +1,72 @@
+@import url('https://fontlibrary.org/face/minecraftia');
+* {
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-	background-color:blue;
-	text-align:center;
-}
-Header {
-	background-color:lime;
-}
-nav {
-	text-align:center;
-	margin-bottom:10px;
-}
-Button {
-	border:2px solid lime; /* little note here this must get a new color */
-	background-color:transparent;
-	color:white;
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    background-image: url("realgrass.jpg"), url("dirt.png");
+    background-repeat: repeat-x, repeat;
+    background-size: 50px;
+    color: white
 }
 main {
-
-
-
+    text-align: left;
+    padding: 0px 0px 0px 5px;
+    border: solid white 2px;
+    min-height: 500px;
+    background-color: rgba(0, 255, 0, 0.1);
 }
-Footer {
-
-
-
+nav{
+    text-align: left;
+    margin-bottom: 5px;
 }
-#selectedbutton {
-	background-color:lightblue;
+button {
+    background-color: transparent;
+    border: solid white 2px;
+    width: 135px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0;
+    color: white
 }
-#greettitle {
-	color:yellow;
-	font-size:150%;
+footer {
+    margin-top: 5px;
+    text-align: left;
+    border: solid white 2px;
+    background-color: rgba(255, 180, 0, 0.1);
 }
+#selected_button {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+#socialbox { 
+	border: solid yellow 3px;
+	width: 135px;
+	height: 30px;
+}
+#Modpacknamebox {
+	border: solid lightblue 2px;
+	width: 600px;
+	height: 30px;
+	text-align: center;
+	margin-left:90px;
+}
+#modpackdesc {
+	border: solid blue 2px;
+	width: 600px;
+	height: 70px;
+	text-align: center;
+	margin-left:90px;
+}
+#img {
+	width:87px;
+	height:87px;
+	vertical-align:middle;
+	float:left;
+}
+	
