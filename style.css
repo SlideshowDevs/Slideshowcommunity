@@ -40,13 +40,15 @@ main {
     text-align: left;
     border: solid white 2px;
     min-height: 500px;
-    background-color: rgba(0, 255, 0, 0.1);
+    background-image: url(images/stone_hot.png);
+    background-size: 50px;
 }
 footer {
     margin-top: 5px;
     text-align: left;
     border: solid white 2px;
-    background-color: rgba(255, 180, 0, 0.1);
+    background-image: url(images/cobblestone.png);
+    background-size: 50px;
 }
 /*/////MEDIA//////*/
 #discord_png {
@@ -71,6 +73,10 @@ footer {
 hr {
     animation: rainbow_animation_border 3s ease-in-out infinite;
 }
+#media_background_img {
+    background-image: url(images/diamond.png);
+    background-size: 50px;
+}
 #media_background {
     animation: rainbow_animation_background 3s ease-in-out infinite;
 }
@@ -82,7 +88,8 @@ nav {
     margin-bottom: 5px;
 }
 button {
-    background-color: rgba(125, 125, 125, 0.20);
+    background-image: url(images/stone.png);
+    background-size: 50px;
     border: solid white 2px;
     width: 135px;
     height: 40px;
@@ -92,12 +99,11 @@ button {
     color: white;
     margin-top: 2px;
     margin-bottom: 2px;
-}
-#selected_button {
-    background-color: rgba(0, 255, 0, 0.5);
     text-shadow: 0px 2px 0 #000000,0px -2px 0 #000000,2px 0px 0 #000000,-2px 0px 0 #000000;
 }
-#button_text {
+#selected_button {
+    background-image: url(images/gold_block0.png);
+    background-size: 50px;
     text-shadow: 0px 2px 0 #000000,0px -2px 0 #000000,2px 0px 0 #000000,-2px 0px 0 #000000;
 }
 /*/////TABLE//////*/
@@ -106,6 +112,8 @@ table {
     margin-right: auto;
     margin-top: 4px;
     border: solid white 2px;
+    background-image: url(images/diamond.png);
+    background-size: 50px;
 }
 th {
     text-align: center;
@@ -166,7 +174,6 @@ button:hover {
     height: 40px;
     font-size: 20px;
     transition: 0.2s;
-    background-color: rgba(0, 255, 0, 0.5);
 }
 #social_image_png:hover, #modpack_images:hover {
     width: 80px;
