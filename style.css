@@ -3,26 +3,68 @@
     font-family: 'MinecraftiaRegular';
     font-weight: normal;
     font-style: normal;
+    image-rendering: pixelated;
 }
-
+/*/////STRUCTURE//////*/
+h1 {
+    margin-bottom: 70px;
+    margin-top: 60px;
+}
 body {
     margin: auto;
     text-align: center;
-    width: 60%;
-    background-image: url("realgrass.jpg"), url("dirt.png");
+    width: 80%;
+    min-width: 500px;
+    max-width: 1500px;
+    background-image: url("images/grass_block_side.png"), url("images/dirt.png");
     background-repeat: repeat-x, repeat;
     background-size: 50px;
     color: white
 }
 main {
+    padding: 0px 5px 0px 5px;
     text-align: left;
-    padding: 0px 0px 0px 5px;
     border: solid white 2px;
     min-height: 500px;
     background-color: rgba(0, 255, 0, 0.1);
 }
-nav{
+footer {
+    margin-top: 5px;
     text-align: left;
+    border: solid white 2px;
+    background-color: rgba(255, 180, 0, 0.1);
+}
+/*/////MEDIA//////*/
+#discord_png {
+    width: 50px;
+    vertical-align: middle;
+    filter: drop-shadow(0px 0px 2px white);
+}
+#social_image_png {
+    width: 70px;
+    margin-top: 10px;
+    filter: drop-shadow(5px 5px 5px #222);
+    animation: rainbow_animation_filter 3s ease-in-out infinite;
+}
+#social_title {
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 0px 20px rgb(255,0,0);
+}
+
+hr {
+    animation: rainbow_animation_border 3s ease-in-out infinite;
+}
+#media_background {
+    animation: rainbow_animation_background 3s ease-in-out infinite;
+}
+#image_hyperlink {
+    text-decoration: none;
+}
+/*/////NAVIGATION//////*/
+nav {
     margin-bottom: 5px;
 }
 button {
@@ -33,40 +75,299 @@ button {
     font-size: 15px;
     font-weight: 600;
     padding: 0;
-    color: white
-}
-footer {
-    margin-top: 5px;
-    text-align: left;
-    border: solid white 2px;
-    background-color: rgba(255, 180, 0, 0.1);
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    
 }
 #selected_button {
     background-color: rgba(0, 255, 0, 0.5);
 }
-#socialbox { 
-	border: solid yellow 3px;
-	width: 135px;
-	height: 30px;
+/*/////TABLE//////*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    border: solid white 2px;
 }
-#Modpacknamebox {
-	border: solid lightblue 2px;
-	width: 600px;
-	height: 30px;
-	text-align: center;
-	margin-left:90px;
+th {
+    text-align: center;
+    border-color: white;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
 }
-#modpackdesc {
-	border: solid blue 2px;
-	width: 600px;
-	height: 70px;
-	text-align: center;
-	margin-left:90px;
+/*/////MODPACKS//////*/
+#lost_in_space {
+    color: rgb(0, 239, 255);
+    background-color: rgba(0, 0, 139,0.5);
+    border-color: rgb(0, 239, 255);
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
 }
-#img {
-	width:87px;
-	height:87px;
-	vertical-align:middle;
-	float:left;
+#lost_in_space_table {
+    background-color: rgba(0, 0, 139,0.2);
+    border-color: rgb(0, 239, 255);
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
 }
-	
+
+#Untechinized {
+    color: rgb(255, 81, 0);
+    background-color: rgba(255, 255, 0,0.5);
+    border-color: rgb(255, 81, 0);
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+}
+
+#Untechinized_table {
+    background-color: rgba(255, 255, 0,0.2);
+    border-color: rgb(255, 81, 0);
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+}
+
+#dope {
+    color: rgb(255, 0, 242);
+    background-color: rgba(0, 255, 0,0.5);
+    border-color: rgb(255, 0, 242);
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+}
+
+#dope_table {
+    background-color: rgba(0, 255, 0,0.2);
+    border-color: rgb(255, 0, 242);
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+}
+#modpack_images {
+    width: 70px;
+}
+/*/////HOVERS//////*/
+button:hover {
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    transition: 0.2s;
+    background-color: rgba(0, 255, 0, 0.5);
+}
+#social_image_png:hover, #modpack_images:hover {
+    width: 80px;
+    transition: 0.2s;
+}
+#discord_png:hover {
+    width: 60px;
+    filter: drop-shadow(0px 0px 10px rgb(0, 255, 0));
+    transition: 0.2s;
+}
+/*/////////////*/
+@keyframes rainbow_animation_background {
+    100%,0% {
+        background-color: rgba(255,0,0,0.1);
+    }
+
+    8% {
+        background-color: rgba(255,127,0,0.1);
+    }
+
+    16% {
+        background-color: rgba(255,255,0,0.1);
+    }
+
+    25% {
+        background-color: rgba(127,255,0,0.1);
+    }
+
+    33% {
+        background-color: rgba(0,255,0,0.1);
+    }
+
+    41% {
+        background-color: rgba(0,255,127,0.1);
+    }
+
+    50% {
+        background-color: rgba(0,255,255,0.1);
+    }
+
+    58% {
+        background-color: rgba(0,127,255,0.1);
+    }
+
+    66% {
+        background-color: rgba(0,0,255,0.1);
+    }
+
+    75% {
+        background-color: rgba(127,0,255,0.1);
+    }
+
+    83% {
+        background-color: rgba(255,0,255,0.1);
+    }
+
+    91% {
+        background-color: rgba(255,0,127,0.1);
+    }
+}
+@keyframes rainbow_animation {
+    100%,0% {
+        color: rgb(255,0,0);
+        text-shadow: 0px 0px 20px rgb(255,0,0);
+    }
+
+    8% {
+        color: rgb(255,127,0);
+        text-shadow: 0px 0px 20px rgb(255,127,0);
+    }
+
+    16% {
+        color: rgb(255,255,0);
+        text-shadow: 0px 0px 20px rgb(255,255,0);
+    }
+
+    25% {
+        color: rgb(127,255,0);
+        text-shadow: 0px 0px 20px rgb(127,255,0);
+    }
+
+    33% {
+        color: rgb(0,255,0);
+        text-shadow: 0px 0px 20px rgb(0,255,0);
+    }
+
+    41% {
+        color: rgb(0,255,127);
+        text-shadow: 0px 0px 20px rgb(0,255,127);
+    }
+
+    50% {
+        color: rgb(0,255,255);
+        text-shadow: 0px 0px 20px rgb(0,255,255);
+    }
+
+    58% {
+        color: rgb(0,127,255);
+        text-shadow: 0px 0px 20px rgb(0,127,255);
+    }
+
+    66% {
+        color: rgb(0,0,255);
+        text-shadow: 0px 0px 20px rgb(0,0,255);
+    }
+
+    75% {
+        color: rgb(127,0,255);
+        text-shadow: 0px 0px 20px rgb(127,0,255);
+    }
+
+    83% {
+        color: rgb(255,0,255);
+        text-shadow: 0px 0px 20px rgb(255,0,255);
+    }
+
+    91% {
+        color: rgb(255,0,127);
+        text-shadow: 0px 0px 20px rgb(255,0,127);
+    }
+}
+
+@keyframes rainbow_animation_border {
+    100%,0% {
+        border-color: rgb(255,0,0);
+    }
+
+    8% {
+        border-color: rgb(255,127,0);
+    }
+
+    16% {
+        border-color: rgb(255,255,0);
+    }
+
+    25% {
+        border-color: rgb(127,255,0);
+    }
+
+    33% {
+        border-color: rgb(0,255,0);
+    }
+
+    41% {
+        border-color: rgb(0,255,127);
+    }
+
+    50% {
+        border-color: rgb(0,255,255);
+    }
+
+    58% {
+        border-color: rgb(0,127,255);
+    }
+
+    66% {
+        border-color: rgb(0,0,255);
+    }
+
+    75% {
+        border-color: rgb(127,0,255);
+    }
+
+    83% {
+        border-color: rgb(255,0,255);
+    }
+
+    91% {
+        border-color: rgb(255,0,127);
+    }
+}
+
+@keyframes rainbow_animation_filter {
+    100%,0% {
+        filter: drop-shadow(5px 5px 5px rgb(255,0,0));
+    }
+
+    8% {
+        filter: drop-shadow(5px 5px 5px rgb(255,127,0));
+    }
+
+    16% {
+        filter: drop-shadow(5px 5px 5px rgb(255,255,0));
+    }
+
+    25% {
+        filter: drop-shadow(5px 5px 5px rgb(127,255,0));
+    }
+
+    33% {
+        filter: drop-shadow(5px 5px 5px rgb(0,255,0));
+    }
+
+    41% {
+        filter: drop-shadow(5px 5px 5px rgb(0,255,127));
+    }
+
+    50% {
+        filter: drop-shadow(5px 5px 5px rgb(0,255,255));
+    }
+
+    58% {
+        filter: drop-shadow(5px 5px 5px rgb(0,127,255));
+    }
+
+    66% {
+        filter: drop-shadow(5px 5px 5px rgb(0,0,255));
+    }
+
+    75% {
+        filter: drop-shadow(5px 5px 5px rgb(127,0,255));
+    }
+
+    83% {
+        filter: drop-shadow(5px 5px 5px rgb(255,0,255));
+    }
+
+    91% {
+        filter: drop-shadow(5px 5px 5px rgb(255,0,127));
+    }
+}
