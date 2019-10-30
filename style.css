@@ -107,6 +107,7 @@ button {
     text-shadow: 0px 2px 0 #000000,0px -2px 0 #000000,2px 0px 0 #000000,-2px 0px 0 #000000;
 }
 #selected_button {
+    width: 160px;
     background-image: url("images/gold_block0_snow.png");
     background-size: 50px;
     text-shadow: 0px 2px 0 #000000,0px -2px 0 #000000,2px 0px 0 #000000,-2px 0px 0 #000000;
@@ -180,6 +181,8 @@ button:hover {
     height: 40px;
     font-size: 20px;
     transition: 0.2s;
+    background-image: url("images/emerald_block.png");
+    background-size: 40px;
 }
 #social_image_png:hover, #modpack_images:hover {
     width: 80px;
