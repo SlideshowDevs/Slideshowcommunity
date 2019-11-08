@@ -40,7 +40,7 @@ main {
     padding: 0px 5px 0px 5px;
     text-align: left;
     border: solid white 2px;
-    min-height: 500px;
+    /*min-height: 500px;*/
     background-image: url("images/stone_hot.png");
     background-size: 50px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -110,6 +110,7 @@ button {
     width: 160px;
     background-image: url("images/gold_block0_snow.png");
     background-size: 50px;
+    background-repeat: repeat-x;
     text-shadow: 0px 2px 0 #000000,0px -2px 0 #000000,2px 0px 0 #000000,-2px 0px 0 #000000;
 }
 /*/////TABLE//////*/
@@ -178,7 +179,7 @@ th {
 /*/////HOVERS//////*/
 button:hover {
     width: 160px;
-    height: 40px;
+    /*height: 40px;*/
     font-size: 20px;
     transition: 0.2s;
     background-image: url("images/emerald_block.png");
